@@ -1,0 +1,23 @@
+<article>
+
+    <img [src]="inventory.image" [alt]="inventory.name + ': ' + inventory.warehouseId"> 
+
+    <h2> {{ inventory.name }} </h2>
+    <p> {{ inventory.warehouseId }} </p>
+    
+    <ul>
+
+       <li>{{ inventory.id }}</li>
+       <li>{{ inventory.name }}</li>
+       <li>{{ inventory.weight }}</li>
+       <li>{{ inventory.quantity }}</li>
+       <li>{{ inventory.maxQuantity }}</li>
+        
+    </ul>
+
+
+    <button (click)="updateInventory()">UPDATE</button>
+    <button (click)="deleteInventory()">DELETE</button>
+    <button (click)="getInventoryDetails()">GET DETAILS</button>
+  
+</article> 

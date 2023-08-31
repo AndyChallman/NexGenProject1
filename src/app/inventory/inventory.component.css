@@ -1,0 +1,118 @@
+h1 {
+    text-align: center;
+    margin: 2em ;
+    padding: auto;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+
+}
+
+form {
+    padding: 20px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: gray 3px 3px 5px;
+    width: auto;
+    align-items: center;
+}
+
+label {
+    display:grid;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 4px;
+
+}
+
+input {
+    font-size: 16px;
+    padding: 6px;
+    margin-bottom: 10px;
+    width: 300px;
+    display: center;
+    align-content: center;
+}
+
+select {
+    padding: 6px;
+    margin-bottom: 10px;
+    width: 316px;;
+    
+}
+
+form button {
+    display:center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 2em;
+    padding: 10px 50px ;
+    font-weight: bold;
+    margin-right: 2em;
+    border-radius: 20px;
+    background-color: #1B353C;
+    color: white;
+    box-shadow: gray 1px 1px 4px;
+    align-items: center;
+}
+
+p {
+    margin: 0px 0px 10px 0px;
+    color: red;
+    font-style: italic;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+    box-shadow: gray 1px 1px 4px;
+    border-radius: 6px;
+    width: auto;
+}
+
+tbody tr {
+    cursor: pointer;
+
+}
+
+th {
+    text-align: center;
+    padding: 2em 3em 2em 3em;
+    background-color: #1B353C;
+    color: white;
+    box-shadow: gray 1px 1px 4px;
+}
+
+td {
+    text-align: center;
+    padding: 1em 1em 1em 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.oddRow {
+    background-color: lightgray;
+}
+
+.evenRow {
+    background-color: darkgray;
+}
+
+table button {
+    display:center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 2em;
+    padding: 10px 50px ;
+    font-weight: bold;
+    margin-right: 2em;
+    border-radius: 20px;
+    background-color: #1B353C;
+    color: white;
+    box-shadow: gray 1px 1px 4px;
+    align-items: center;
+}

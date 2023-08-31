@@ -1,0 +1,23 @@
+<h1>Artifact Details</h1>
+
+<article>
+
+
+    <div>
+        <img [src]="localInventory.image" [alt]="localInventory.name + ' in ' + localInventory.warehouseId">
+    </div>
+     
+    <h2>{{ localInventory.name }}</h2>
+    <h3>LOCATION: Warehouse {{ localInventory.warehouseId }}</h3>
+
+    <ul>
+        <li> Item Id: {{ localInventory.id }}</li>
+        <li> Item Weight: {{ localInventory.weight }} </li>
+        <li> Item Quantity: {{ localInventory.quantity }}</li>
+        <li> Item Max Quantity: {{ localInventory.maxQuantity }}</li>
+    </ul>
+    
+    
+  
+
+</article>

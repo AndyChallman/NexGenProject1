@@ -1,0 +1,34 @@
+article {
+    background-color: rgb(225, 225, 225);
+    padding: 1em;
+    border-radius: 15px;
+    display: inline-block;
+    width: 400px;
+    margin: 0px 10px 10px 0px;
+}
+
+article > img {
+    width: 100px;
+    float: right;
+}
+
+h2, h3, p, ul {
+    margin: 0px;
+}
+
+h2 {
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 6px;
+    margin-right: 10px;
+}

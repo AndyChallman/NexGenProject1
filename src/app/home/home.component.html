@@ -1,0 +1,28 @@
+<main>
+
+    <h1>Welcome to True Home Remodeling</h1>
+
+    <h2>Our Warehouses</h2>
+
+    <article>
+
+        <ng-container *ngFor="let warehouse of localWarehouses; let i = index;" >
+       
+            <object>
+
+                <h2>Warehouse {{ warehouse.warehouseId }}</h2>
+
+                <ul>
+                    <li>Address: {{ warehouse.address }}</li>
+                    <li>Capacity: {{ warehouse.capacity }}</li>
+                </ul>
+            
+            </object> 
+
+        </ng-container>
+
+    </article>
+
+
+
+</main>

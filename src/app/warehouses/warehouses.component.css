@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+    margin: auto;
+    padding: 2em;
+}
+
+h3 {
+    text-align: center;
+    margin: auto;
+    padding: 2em;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+
+}
+
+table {
+    margin: auto;
+    text-align: left;
+    border-collapse: collapse;
+    box-shadow: gray 1px 1px 4px;
+    border-radius: 6px;
+    
+}
+
+tbody tr {
+    cursor: pointer;
+
+}
+
+th {
+    text-align: left;
+    padding: 1em 3em 2em 3em;
+    background-color: #1B353C;
+    color: white;
+    box-shadow: gray 1px 1px 4px;
+}
+
+td {
+    text-align: left;
+    padding: 1em 3em 2em 3em;
+}
+
+
+.oddRow {
+    background-color: lightgray;
+}
+
+.evenRow {
+    background-color: darkgray;
+}

@@ -1,0 +1,96 @@
+<main>
+    
+    <h1>View All Inventory</h1>
+
+
+    <form [formGroup] = "addForm">
+
+        <h2 *ngIf="!chosenInventoryId">Add a New Item to the Inventory</h2>
+        <h2 *ngIf="chosenInventoryId">Update Item in the Inventory</h2>
+
+        <label for="name">Inventory Item</label>
+        <input type="text" id="name" name="name" formControlName="name"> 
+      
+        <p *ngIf="name!.invalid && (name!.touched || name!.dirty)">
+         
+            <span *ngIf="name!.errors?.['required']">Inventory name is required!</span>
+            <span *ngIf="name!.errors?.['maxLength']">Inventory name must be 60 characters or less!</span>
+
+        </p>
+
+        <label for="weight">Weight</label>
+        <input type="text" id="weight" name="weight" formControlName="weight">
+
+        <label for="image">Image URL</label>
+        <input type="text" id="image" name="image" formControlName="image">
+
+        <label for="quantity">Quantity</label>
+        <input type="text" id="quantity" name="quantity" formControlName="quantity">
+
+        <label for="maxQuantity">Max Quantity</label>
+        <input type="text" id="maxQuantity" name="maxQuantity" formControlName="maxQuantity">
+
+        <label for="warehouse">Warehouse</label>
+        <select name="warehouse" id="warehouse" name="warehouse" formControlName="warehouseId">
+
+                <option value="" selected>Select a warehouse...</option>
+
+            <ng-container *ngFor="let warehouse of localWarehouses">
+                <option [value]="warehouse.warehouseId">Warehouse {{ warehouse.warehouseId }}</option>
+            </ng-container>
+
+        </select>
+
+        <div>
+            <button (click)="addInventory()">ADD NEW Item to Inventory</button>
+
+            <button (click)="updateInventory()">UPDATE Item in Inventory</button>
+
+            <button (click)="deleteInventory(chosenInventory)"> DELETE Item from Inventory</button>
+            
+        </div>
+
+    </form>
+
+    <h1>All Inventory</h1>
+
+    <h3 *ngIf="!localInventories.length" style="color: red;">No Inventory Items in the database!</h3>
+
+    <table *ngIf="localInventories.length">
+
+        <thead>
+            <tr>
+                <th>Item Id</th>
+                <th>Item Name</th>
+                <th>Item weight</th>
+                <th>Quantity</th>
+                <th>Maximum allowed quantity</th>
+                <th>Warehouse Id</th>
+         </tr>
+        </thead>
+
+        <tbody>
+          
+            <ng-container *ngFor="let inventory of localInventories; let i = index;">
+               
+                <tr [ngClass]="{
+                    'oddRow': i % 2 === 1,
+                    'evenRow': i % 2 === 0
+                }"
+                 (click)="chooseInventory(inventory)">
+                    <td>{{ inventory.id }}</td>
+                    <td>{{ inventory.name }}</td>
+                    <td>{{ inventory.weight }}</td>
+                    <td>{{ inventory.quantity }}</td>
+                    <td>{{ inventory.maxQuantity }}</td>
+                    <td>{{ inventory.warehouseId }}</td>
+                </tr>
+
+            </ng-container>
+
+        </tbody>
+
+    </table>
+
+
+</main>

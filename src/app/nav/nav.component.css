@@ -1,0 +1,19 @@
+nav {
+    background-color: #344043;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    height: 3.25em;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 1em;
+    display: inline-block;
+    color: white;
+    width: 8em;
+}
+
+nav > a:hover {
+    background-color: darkgrey;
+}

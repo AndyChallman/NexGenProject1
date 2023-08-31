@@ -1,0 +1,36 @@
+
+h1 {
+    text-align: center;
+    padding: 3em;
+}
+
+h2 {
+    text-align: center;
+    font-weight: lighter;
+}
+article{
+    text-align: center;
+}
+
+ul {
+    margin-top: 2em;
+}
+
+li {
+    color: white;
+    margin-top: 1em;
+    text-align: left;
+}
+
+object {
+    background-color: #1B353C;
+    color: white;
+    margin: 1em;
+    padding: auto;
+    border-radius: 15px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: gray 3px 3px 5px;
+    
+} 
+
